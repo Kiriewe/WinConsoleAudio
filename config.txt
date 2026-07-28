@@ -1,0 +1,41 @@
+# Настройки аудио-визуализатора CAVA / CAVA Audio Visualizer Configuration
+#
+# 1. Цвет полос / Bar color:
+#    Используется, если градиент выключен / Used if gradient is disabled.
+#    Поддерживает названия цветов (cyan, green, red, blue, magenta, yellow, white, orange, purple, pink)
+#    или любой HEX-код цвета (например, #00FF66).
+color = cyan
+#
+# 2. Градиент цветов / Color gradient: true, false
+#    Если включен, цвета плавно перетекают снизу вверх / Smooth color transition from bottom to top.
+gradient = true
+#
+# 3. Цвета градиента / Gradient colors (HEX):
+#    Цвет снизу (басы) / Bottom color (bass)
+color_bottom = #00FF66
+#    Цвет сверху (высокие) / Top color (treble)
+color_top = #FF007F
+#
+# 4. Количество полос / Number of bars:
+#    - auto : автоматический подбор под ширину консоли / auto-fit to console width
+#    - число (например, 20, 40): фиксированное количество полос / static number of bars
+bars = auto
+#
+# 5. Частота кадров / Target FPS: 30, 60, 75, 90
+fps = 60
+#
+# 6. Сглаживание звука / Noise reduction (smoothing):
+#    - число от 0.1 (быстрый, дерганый) до 1.0 (очень медленный, плавный)
+#    - recommended: 0.77 (стандарт CAVA)
+smoothing = 0.77
+#
+# 7. Частотный диапазон / Frequency range (Hz):
+#    low_cutoff - нижняя граница (басы, например 50)
+#    high_cutoff - верхняя граница (высокие, например 12000)
+low_cutoff = 50
+high_cutoff = 12000
+#
+# 8. Чувствительность / Sensitivity:
+#    - auto : автоподстройка под громкость звука / automatic sensitivity scaling
+#    - число (например, 1.0, 1.5, 2.0): фиксированный множитель громкости / static multiplier
+sensitivity = auto
